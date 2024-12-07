@@ -1,0 +1,46 @@
+{
+  "name": "no_series",
+  "version": "1.0.4",
+  "description": "No. series",
+  "main": "./out/main/index.js",
+  "author": "autocorp",
+  "homepage": "https://electron-vite.org",
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
+    "start": "electron-vite preview",
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "postinstall": "electron-builder install-app-deps",
+    "build:unpack": "npm run build && electron-builder --dir",
+    "build:win": "npm run build && electron-builder --win",
+    "build:mac": "npm run build && electron-builder --mac",
+    "build:linux": "npm run build && electron-builder --linux"
+  },
+  "dependencies": {
+    "@electron-toolkit/preload": "^3.0.1",
+    "@electron-toolkit/utils": "^3.0.0",
+    "axios": "^1.7.9",
+    "DatePicker": "^2.0.0",
+    "moment": "^2.30.1",
+    "react-datepicker": "^7.5.0"
+  },
+  "devDependencies": {
+    "@electron-toolkit/eslint-config": "^1.0.2",
+    "@electron-toolkit/eslint-config-prettier": "^2.0.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "electron": "^31.0.2",
+    "electron-builder": "^24.13.3",
+    "electron-vite": "^2.3.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.3",
+    "postcss": "^8.4.49",
+    "prettier": "^3.3.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.16",
+    "vite": "^5.3.1"
+  },
+   "proxy": "https://iappapi.ach.co.th"
+}
